@@ -1,0 +1,122 @@
+body{
+    font-family: 'Overpass', sans-serif;
+    background-color: rgb(18, 20, 23);
+    color: white;
+    font-weight: 400;
+    font-size: 15px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+}
+.showhide{
+    display: none;
+}
+h1{
+    font-weight: 700;
+    margin-top: 40px;
+}
+p{
+    line-height: 1.5;
+    color: hsl(216, 12%, 54%);
+}
+#container{
+    width: 400px;
+    margin: 0 auto;
+    vertical-align: middle;
+    background-color:hsl(213, 19%, 18%);
+    border-radius: 40px;
+    padding: 40px;
+}
+
+/* principal #main */
+#main{
+    /* display:none; */
+}
+.star{
+    background-color: rgba(18, 20, 23,0.4);
+    padding:15px;
+    border-radius:50%;
+}
+.star img{
+
+    vertical-align: middle;
+}
+
+input[type=submit]{
+    background-color:hsl(25, 97%, 53%);
+    width: 100%;
+    padding: 15px;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    letter-spacing: 0.2em;
+    font-size: 1.1em;
+    margin-top: 40px;
+    cursor: pointer;
+}
+button:hover{
+    color: hsl(25, 97%, 53%);
+    background-color: #fff;
+}
+
+#rating{
+    margin-top: 50px;
+    text-align: center;
+}
+#rating div{
+    display: inline-block;
+    /* width: 19%; */
+    margin: 0;
+    padding: 0;
+    vertical-align: center;
+
+
+}
+input[type=radio]{
+    display: none;
+}
+input:checked{
+    background: PaleVioletRed;
+}
+label{
+    cursor:pointer;
+    background-color:rgba(124, 135, 152, 0.1);
+    padding:17px 25px;
+    font-size: 1.2em;
+    border-radius:50%;
+    display: inline-block;
+    margin: 5px;
+}
+input:hover+label{
+    background-color:hsl(216, 12%, 54%);
+    color: white;
+}
+input:checked+label {
+    background-color: hsl(25, 97%, 53%) ;
+    color: white;
+}
+
+/* Thank you part */
+
+
+#thankyou img{
+    display: block;
+    margin: 0 auto;
+}
+#selected{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#selected span{
+    background-color:rgba(124, 135, 152, 0.1);
+    color:hsl(25, 97%, 53%) ;
+    border-radius: 20px;
+    padding: 10px 15px;
+    margin: 40px 0 20px 0 ;
+}
+h2{
+    text-align: center;
+}
