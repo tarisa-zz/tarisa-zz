@@ -5,5 +5,5 @@ Here, for now, I'm uploading my training in web dev. While I'm studying(js) and 
 ##Challenge List
 ### Frontend Mentor
 
-- **Interactive Rating Component**:  <a href="https://tarisa-zz.github.io/tarisa-zz/interactive-rating-component-main/" target="_blank">Preview</a> | <a href="https://github.com/tarisa-zz/tarisa-zz/tree/main/interactive-rating-component-main" target="_blank">Code</a>
+- **Interactive Rating Component** |  <a href="https://tarisa-zz.github.io/tarisa-zz/interactive-rating-component-main/" target="_blank">Preview</a> | <a href="https://github.com/tarisa-zz/tarisa-zz/tree/main/interactive-rating-component-main" target="_blank">Code</a>
 
