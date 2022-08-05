@@ -1,6 +1,6 @@
 ## Hello!
 
-Here, for now, I'm uploading my training in web dev. While I'm studying(js) and remembering(html and css), I'm doing a few challenges that I would list below. I thank everybody that could spare some valuable time to give me some feedback on my quest :).
+Here, for now, I'm uploading my challenge projects in web dev. While I'm studying(js) and remembering(html and css), I'm doing a few challenges that I would list below. I thank everybody that could spare some valuable time to give me some feedback on my quest :).
 
 ##Challenge List
 ### Frontend Mentor
