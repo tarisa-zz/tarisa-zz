@@ -1,0 +1,195 @@
+$light-cyan-1: hsl(180, 52%, 96%);
+$light-cyan-2: hsl(180, 31%, 95%);
+$dark-cyan: hsl(180, 8%, 52%);
+$very-dark-cyan:hsl(180, 14%, 20%);
+$primary: hsl(180, 29%, 50%);
+@mixin filters{
+            background-color: $light-cyan-2;
+            border-radius: 5px;
+            margin-left: 15px;
+            border: none;
+            color: $primary;
+        }
+body{
+
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px;
+    background-color: $light-cyan-2;
+    color: $primary;
+    header{
+        background: $primary url('images/bg-header-desktop.svg');
+        height: 156px;
+    }
+}
+main{
+// width: 1100px;
+    #filter{
+        background-color: #fff;
+        border-radius: 5px;
+        position: relative;
+        height: 72px;
+        top:-35px;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        text-align: left;
+        box-shadow: 0px 10px 20px -7px $primary;
+        #clearFilter{
+            color: $dark-cyan;
+            text-align: center;
+            &:hover{
+                color: $primary;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+        .filters{
+            @include filters;
+            padding:0 0 0 10px ;
+            &:hover{
+                img{
+                    background-color: black;
+                }
+            }
+            img{
+                background-color: $primary;
+                padding: 10px;
+                margin-left: 10px;
+                border-radius: 0 5px 5px 0;
+            }
+        }
+    }
+    #jobs{
+        background-color: #fff;
+        border-radius: 5px;
+        height: 150px;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+        box-shadow: 0px 10px 20px -7px $primary;
+        padding:20px;
+        box-sizing: border-box;
+        border-left: 5px solid $primary;
+        header{
+            height: auto;
+            background: none;
+            .new{
+                background-color: $primary;
+                color: white;
+                padding: 7px 10px;
+                border-radius: 15px;
+                margin: 0 20px;
+            }
+            .featured{
+                background-color: $very-dark-cyan;
+                color: white;
+                padding: 7px 10px;
+                border-radius: 15px;
+            }
+        }
+        main{
+            text-align: left;
+            .data{
+                color: $dark-cyan;
+                font-size: 16px;
+                span{
+                    color: $dark-cyan;
+                    margin-right: 20px;
+                    &:before {
+                        content: "";
+                    } 
+                    &:after {
+                        content: "  ●  ";                       
+                    }
+                    &:last-of-type{                   
+                        &:after {
+                            content: " ";                           
+                        }
+                    }
+                }
+            }
+            .company{
+                font-size: 18px;
+            }
+            
+            .position{
+                font-size: 22px;
+                margin-top: 10px;
+                font-weight: 700;
+                color: $very-dark-cyan;
+                &:hover{
+                    cursor: pointer;
+                    color:$primary;
+                }
+            }
+        }
+        #filtered{
+            text-align: right;
+            button{
+                @include filters;
+                padding: 5px 10px;
+                &:hover{
+                    cursor: pointer;
+                    background-color: $primary;
+                    color: white;
+                }
+            } 
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .container{
+        width: 1100px;
+    }
+}
+@media (max-width:992px){
+    header{
+        width: 100%;
+    }
+    main{
+        #jobs, #filter{
+            margin: 5px;
+        }
+        #filter{
+            height: auto;
+            padding: 5px;
+            #clearFilter{
+                text-align: left;
+            }
+            .filters{
+                margin:5px;
+            }
+        }
+        #jobs{
+            position:relative;
+            height: auto;
+            .logo{
+                position: absolute;
+                top: - 25px;   
+                img{
+                    max-width: 50px;
+                }
+            }
+            header{
+                margin-top: 15px;
+            }
+            main{
+                border-bottom: 1px solid $dark-cyan;
+                margin-bottom: 20px;
+                .position{
+                    margin-bottom: 0;
+                }
+            }
+            #filtered{
+                text-align: left;   
+                span{
+                    margin: 10px 5px 5px 0;
+                    display: inline-block;
+                    padding:5px 10px;
+                }    
+                } 
+        }
+    }
+    
+}
