@@ -14,25 +14,24 @@ function content (data){
 
             const container = document.querySelector(".container");
             const job = document.querySelector('#newJobs');
-        
             const clone = job.content.cloneNode(true);
 
             const logo = clone.querySelector('.logo');
             logo.src = each.logo;
 
-            const company = clone.querySelector('#company');
+            const company = clone.querySelector('.company');
             company.innerText = each.company;
 
             let isnewtrue = each.new;
             if(isnewtrue === true){
-                const isnew = clone.querySelector('#new');
+                const isnew = clone.querySelector('.new');
                 isnew.innerText = 'NEW!';
                 isnew.classList.remove('hide');
             }
 
             let isfeaturedtrue = each.featured;
             if(isfeaturedtrue === true){
-                const isfeatured = clone.querySelector('#featured');
+                const isfeatured = clone.querySelector('.featured');
                 isfeatured.innerText = 'FEATURED!';
                 isfeatured.classList.remove('hide');
                 const jobSection = clone.querySelector('.jobs');
@@ -53,7 +52,7 @@ function content (data){
             const level = clone.querySelector('.level');
             level.innerText = each.level;
 
-            const filters = clone.querySelector('#filters');
+            const filters = clone.querySelector('.filtersOri');
 
             function newButton(button){
                 const newButton = document.createElement('button');
@@ -136,36 +135,13 @@ function content (data){
                                     each.classList.remove('disableB');
                                 }
                                 })
+                        })                 
                         })
-                        
-                            
-                        })
-       
                 })
-
-                   
-                
+  
             });
-
-           
-
-            
-
             container.appendChild(clone);
-
-                    
-                       
-                    
 
     }
     }
 }
-
-
-
-
-
- 
-
-
-

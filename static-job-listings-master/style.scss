@@ -79,24 +79,24 @@ main{
         box-shadow: 0px 10px 20px -7px $primary;
         padding:20px;
         box-sizing: border-box;
-        header{
+        .header{
             height: auto;
             background: none;
-            #new{
+            .new{
                 background-color: $primary;
                 color: white;
                 padding: 7px 10px;
                 border-radius: 15px;
                 margin: 0 20px;
             }
-            #featured{
+            .featured{
                 background-color: $very-dark-cyan;
                 color: white;
                 padding: 7px 10px;
                 border-radius: 15px;
             }
         }
-        main{
+        .main{
             text-align: left;
             .data{
                 color: $dark-cyan;
@@ -117,7 +117,7 @@ main{
                     }
                 }
             }
-            #company{
+            .company{
                 font-size: 18px;
             }
             
@@ -132,7 +132,7 @@ main{
                 }
             }
         }
-        #filters{
+        .filtersOri{
             text-align: right;
             button{
                 @include filters;
@@ -180,10 +180,10 @@ main{
                 
                     max-width: 50px;
             }
-            header{
+            .header{
                 margin-top: 15px;
             }
-            main{
+            .main{
                 border-bottom: 1px solid $dark-cyan;
                 margin-bottom: 20px;
                 .position{

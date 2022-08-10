@@ -71,60 +71,60 @@ main .jobs {
   padding: 20px;
   box-sizing: border-box;
 }
-main .jobs header {
+main .jobs .header {
   height: auto;
   background: none;
 }
-main .jobs header #new {
+main .jobs .header .new {
   background-color: hsl(180deg, 29%, 50%);
   color: white;
   padding: 7px 10px;
   border-radius: 15px;
   margin: 0 20px;
 }
-main .jobs header #featured {
+main .jobs .header .featured {
   background-color: hsl(180deg, 14%, 20%);
   color: white;
   padding: 7px 10px;
   border-radius: 15px;
 }
-main .jobs main {
+main .jobs .main {
   text-align: left;
 }
-main .jobs main .data {
+main .jobs .main .data {
   color: hsl(180deg, 8%, 52%);
   font-size: 16px;
 }
-main .jobs main .data span {
+main .jobs .main .data span {
   color: hsl(180deg, 8%, 52%);
   margin-right: 20px;
 }
-main .jobs main .data span:before {
+main .jobs .main .data span:before {
   content: "";
 }
-main .jobs main .data span:after {
+main .jobs .main .data span:after {
   content: "  ●  ";
 }
-main .jobs main .data span:last-of-type:after {
+main .jobs .main .data span:last-of-type:after {
   content: " ";
 }
-main .jobs main #company {
+main .jobs .main .company {
   font-size: 18px;
 }
-main .jobs main .position {
+main .jobs .main .position {
   font-size: 22px;
   margin-top: 10px;
   font-weight: 700;
   color: hsl(180deg, 14%, 20%);
 }
-main .jobs main .position:hover {
+main .jobs .main .position:hover {
   cursor: pointer;
   color: hsl(180deg, 29%, 50%);
 }
-main .jobs #filters {
+main .jobs .filtersOri {
   text-align: right;
 }
-main .jobs #filters button {
+main .jobs .filtersOri button {
   background-color: hsl(180deg, 31%, 95%);
   border-radius: 5px;
   margin: 5px 0 0 15px;
@@ -132,7 +132,7 @@ main .jobs #filters button {
   color: hsl(180deg, 29%, 50%);
   padding: 5px 10px;
 }
-main .jobs #filters button:hover {
+main .jobs .filtersOri button:hover {
   cursor: pointer;
   background-color: hsl(180deg, 29%, 50%);
   color: white;
@@ -170,14 +170,14 @@ main .jobs #filters button:hover {
     top: -25px;
     max-width: 50px;
   }
-  main .jobs header {
+  main .jobs .header {
     margin-top: 15px;
   }
-  main .jobs main {
+  main .jobs .main {
     border-bottom: 1px solid hsl(180deg, 8%, 52%);
     margin-bottom: 20px;
   }
-  main .jobs main .position {
+  main .jobs .main .position {
     margin-bottom: 0;
   }
   main .jobs #filtered {
