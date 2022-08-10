@@ -39,49 +39,38 @@
   <body>
     <header></header>
     <main class="container">
-      <section id="filter" class="row g-0">
-        <div class="col-10" id="filterItems">
-          <button class="filters">
-            Frontend <img src="images/icon-remove.svg" alt="" />
-          </button>
-          <button class="filters">
-            CSS <img src="images/icon-remove.svg" alt="" />
-          </button>
-          <button class="filters">
-            JavaScript <img src="images/icon-remove.svg" alt="" />
-          </button>
-        </div>
+      <section id="filtered" class="row g-0 hide">
+        <div class="col-10" id="filterItems"></div>
         <div class="col-2" id="clearFilter">Clear</div>
       </section>
-      <section id="jobs" class="row g-0">
-        <div class="col-md-1 logo">
-          <img src="images/photosnap.svg" alt="company-logo" />
-        </div>
-        <div class="col-md-4">
-          <header>
-            <span class="company">Photosnap</span>
-            <span class="new">NEW!</span>
-            <span class="featured">FEATURED</span>
-          </header>
-          <main>
-            <p class="position">Senior Frontend Developer</p>
-            <p class="data">
-              <span class="postedAt">1d ago</span>
-              <span class="contract">Full Time</span>
-              <span class="location">USA only</span>
-            </p>
-          </main>
-        </div>
-        <div class="col-md-6">
-          <aside id="filtered">
-            <button>Frontend</button>
-            <button>Senior</button>
-            <button>HTML</button>
-            <button>CSS</button>
-            <button>JavaScript</button>
-          </aside>
-        </div>
-      </section>
+      <template id="newJobs">
+        <section class="jobs row g-0">
+          <div class="col-md-1">
+            <img src="" class="logo" alt="company-logo" />
+          </div>
+          <div class="col-md-4">
+            <header>
+              <span id="company"></span>
+              <span id="new" class="hide"></span>
+              <span id="featured" class="hide"></span>
+            </header>
+            <main>
+              <p class="position"></p>
+              <p class="data">
+                <span class="postedAt"></span>
+                <span class="contract"></span>
+                <span class="location"></span>
+              </p>
+            </main>
+          </div>
+          <div class="col-md-6">
+            <aside id="filters">
+              <button class="role"></button>
+              <button class="level"></button>
+            </aside>
+          </div>
+        </section>
+      </template>
     </main>
 
     <div class="attribution">

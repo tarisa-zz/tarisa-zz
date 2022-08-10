@@ -6,9 +6,19 @@ $primary: hsl(180, 29%, 50%);
 @mixin filters{
             background-color: $light-cyan-2;
             border-radius: 5px;
-            margin-left: 15px;
+            margin: 5px 0 0 15px;
             border: none;
             color: $primary;
+        }
+
+        .hide{
+            display: none;
+        }
+        .isfeatured{
+            border-left: 5px solid $primary;
+        }
+        .disableB{
+            pointer-events: none;
         }
 body{
 
@@ -23,7 +33,7 @@ body{
 }
 main{
 // width: 1100px;
-    #filter{
+    #filtered{
         background-color: #fff;
         border-radius: 5px;
         position: relative;
@@ -59,28 +69,27 @@ main{
             }
         }
     }
-    #jobs{
+    .jobs{
         background-color: #fff;
         border-radius: 5px;
         height: 150px;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 30px;
+        margin: 20px 0;
         box-shadow: 0px 10px 20px -7px $primary;
         padding:20px;
         box-sizing: border-box;
-        border-left: 5px solid $primary;
         header{
             height: auto;
             background: none;
-            .new{
+            #new{
                 background-color: $primary;
                 color: white;
                 padding: 7px 10px;
                 border-radius: 15px;
                 margin: 0 20px;
             }
-            .featured{
+            #featured{
                 background-color: $very-dark-cyan;
                 color: white;
                 padding: 7px 10px;
@@ -108,7 +117,7 @@ main{
                     }
                 }
             }
-            .company{
+            #company{
                 font-size: 18px;
             }
             
@@ -123,7 +132,7 @@ main{
                 }
             }
         }
-        #filtered{
+        #filters{
             text-align: right;
             button{
                 @include filters;
@@ -148,10 +157,10 @@ main{
         width: 100%;
     }
     main{
-        #jobs, #filter{
+        .jobs, #filter{
             margin: 5px;
         }
-        #filter{
+        #filtered{
             height: auto;
             padding: 5px;
             #clearFilter{
@@ -161,15 +170,15 @@ main{
                 margin:5px;
             }
         }
-        #jobs{
+        .jobs{
             position:relative;
             height: auto;
+            margin: 40px;
             .logo{
                 position: absolute;
                 top: - 25px;   
-                img{
+                
                     max-width: 50px;
-                }
             }
             header{
                 margin-top: 15px;

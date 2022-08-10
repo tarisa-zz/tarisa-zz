@@ -1,4 +1,16 @@
 @charset "UTF-8";
+.hide {
+  display: none;
+}
+
+.isfeatured {
+  border-left: 5px solid hsl(180deg, 29%, 50%);
+}
+
+.disableB {
+  pointer-events: none;
+}
+
 body {
   font-family: "League Spartan", sans-serif;
   font-size: 15px;
@@ -10,7 +22,7 @@ body header {
   height: 156px;
 }
 
-main #filter {
+main #filtered {
   background-color: #fff;
   border-radius: 5px;
   position: relative;
@@ -22,106 +34,105 @@ main #filter {
   text-align: left;
   box-shadow: 0px 10px 20px -7px hsl(180deg, 29%, 50%);
 }
-main #filter #clearFilter {
+main #filtered #clearFilter {
   color: hsl(180deg, 8%, 52%);
   text-align: center;
 }
-main #filter #clearFilter:hover {
+main #filtered #clearFilter:hover {
   color: hsl(180deg, 29%, 50%);
   text-decoration: underline;
   cursor: pointer;
 }
-main #filter .filters {
+main #filtered .filters {
   background-color: hsl(180deg, 31%, 95%);
   border-radius: 5px;
-  margin-left: 15px;
+  margin: 5px 0 0 15px;
   border: none;
   color: hsl(180deg, 29%, 50%);
   padding: 0 0 0 10px;
 }
-main #filter .filters:hover img {
+main #filtered .filters:hover img {
   background-color: black;
 }
-main #filter .filters img {
+main #filtered .filters img {
   background-color: hsl(180deg, 29%, 50%);
   padding: 10px;
   margin-left: 10px;
   border-radius: 0 5px 5px 0;
 }
-main #jobs {
+main .jobs {
   background-color: #fff;
   border-radius: 5px;
   height: 150px;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 30px;
+  margin: 20px 0;
   box-shadow: 0px 10px 20px -7px hsl(180deg, 29%, 50%);
   padding: 20px;
   box-sizing: border-box;
-  border-left: 5px solid hsl(180deg, 29%, 50%);
 }
-main #jobs header {
+main .jobs header {
   height: auto;
   background: none;
 }
-main #jobs header .new {
+main .jobs header #new {
   background-color: hsl(180deg, 29%, 50%);
   color: white;
   padding: 7px 10px;
   border-radius: 15px;
   margin: 0 20px;
 }
-main #jobs header .featured {
+main .jobs header #featured {
   background-color: hsl(180deg, 14%, 20%);
   color: white;
   padding: 7px 10px;
   border-radius: 15px;
 }
-main #jobs main {
+main .jobs main {
   text-align: left;
 }
-main #jobs main .data {
+main .jobs main .data {
   color: hsl(180deg, 8%, 52%);
   font-size: 16px;
 }
-main #jobs main .data span {
+main .jobs main .data span {
   color: hsl(180deg, 8%, 52%);
   margin-right: 20px;
 }
-main #jobs main .data span:before {
+main .jobs main .data span:before {
   content: "";
 }
-main #jobs main .data span:after {
+main .jobs main .data span:after {
   content: "  ●  ";
 }
-main #jobs main .data span:last-of-type:after {
+main .jobs main .data span:last-of-type:after {
   content: " ";
 }
-main #jobs main .company {
+main .jobs main #company {
   font-size: 18px;
 }
-main #jobs main .position {
+main .jobs main .position {
   font-size: 22px;
   margin-top: 10px;
   font-weight: 700;
   color: hsl(180deg, 14%, 20%);
 }
-main #jobs main .position:hover {
+main .jobs main .position:hover {
   cursor: pointer;
   color: hsl(180deg, 29%, 50%);
 }
-main #jobs #filtered {
+main .jobs #filters {
   text-align: right;
 }
-main #jobs #filtered button {
+main .jobs #filters button {
   background-color: hsl(180deg, 31%, 95%);
   border-radius: 5px;
-  margin-left: 15px;
+  margin: 5px 0 0 15px;
   border: none;
   color: hsl(180deg, 29%, 50%);
   padding: 5px 10px;
 }
-main #jobs #filtered button:hover {
+main .jobs #filters button:hover {
   cursor: pointer;
   background-color: hsl(180deg, 29%, 50%);
   color: white;
@@ -136,44 +147,43 @@ main #jobs #filtered button:hover {
   header {
     width: 100%;
   }
-  main #jobs, main #filter {
+  main .jobs, main #filter {
     margin: 5px;
   }
-  main #filter {
+  main #filtered {
     height: auto;
     padding: 5px;
   }
-  main #filter #clearFilter {
+  main #filtered #clearFilter {
     text-align: left;
   }
-  main #filter .filters {
+  main #filtered .filters {
     margin: 5px;
   }
-  main #jobs {
+  main .jobs {
     position: relative;
     height: auto;
+    margin: 40px;
   }
-  main #jobs .logo {
+  main .jobs .logo {
     position: absolute;
     top: -25px;
-  }
-  main #jobs .logo img {
     max-width: 50px;
   }
-  main #jobs header {
+  main .jobs header {
     margin-top: 15px;
   }
-  main #jobs main {
+  main .jobs main {
     border-bottom: 1px solid hsl(180deg, 8%, 52%);
     margin-bottom: 20px;
   }
-  main #jobs main .position {
+  main .jobs main .position {
     margin-bottom: 0;
   }
-  main #jobs #filtered {
+  main .jobs #filtered {
     text-align: left;
   }
-  main #jobs #filtered span {
+  main .jobs #filtered span {
     margin: 10px 5px 5px 0;
     display: inline-block;
     padding: 5px 10px;
