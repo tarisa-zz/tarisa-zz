@@ -22,6 +22,9 @@ body header {
   height: 156px;
 }
 
+main {
+  margin-top: 50px;
+}
 main #filtered {
   background-color: #fff;
   border-radius: 5px;
