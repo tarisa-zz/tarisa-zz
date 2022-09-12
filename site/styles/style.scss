@@ -1,0 +1,57 @@
+$greydark: #151515;
+$greylight: #6d6b6b;
+$greylighter: #939292;
+
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+}
+h1,h2,h3,h4,h5{
+font-weight: 500;
+}
+a{
+    color: #ef476f;
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+        color: #ef476f;
+    }
+}
+header{
+    color: #fff;
+    background-color: $greydark;
+    h1{
+        text-align: left;
+        text-transform: none;
+    }
+    span{
+        color:$greylight;
+    }
+    #menu{
+        a{
+            font-weight: 500;
+            color: rgba(239, 71, 111, 0.7);
+            &:hover{
+                color: rgba(239, 71, 111, 0.9);
+            }
+        }
+    }
+
+}
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+.carousel-caption{
+    p{
+        background-color: rgba(255,255,255,0.8);
+        border: 1px solid #ccc;
+    }
+    
+}
+.side{
+    background-color: #fafafa;
+    // border-left: 1px solid #ccc;
+    padding: 20px;
+}

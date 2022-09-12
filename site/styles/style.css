@@ -1,0 +1,51 @@
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 500;
+}
+
+a {
+  color: #ef476f;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  color: #ef476f;
+}
+
+header {
+  color: #fff;
+  background-color: #151515;
+}
+header h1 {
+  text-align: left;
+  text-transform: none;
+}
+header span {
+  color: #6d6b6b;
+}
+header #menu a {
+  font-weight: 500;
+  color: rgba(239, 71, 111, 0.7);
+}
+header #menu a:hover {
+  color: rgba(239, 71, 111, 0.9);
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.carousel-caption p {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #ccc;
+}
+
+.side {
+  background-color: #fafafa;
+  padding: 20px;
+}/*# sourceMappingURL=style.css.map */
