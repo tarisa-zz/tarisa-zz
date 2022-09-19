@@ -1,6 +1,6 @@
 ## Hello!
 
-Here, for now, I'm uploading my challenge projects in frontend! I'm doing a few challenges that I would list below. I thank everybody that could spare some valuable time to give me some feedback on my quest :).
+Here, for now, I'm uploading my challenge projects in frontend!git I'm doing a few challenges that I would list below. I thank everybody that could spare some valuable time to give me some feedback on my quest :)!!!
 
 ##Challenge List (from latest to oldest)
 
